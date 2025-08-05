@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="doce.css">
+  <title>Padaria Doce Sabor</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Padaria Doce Sabor 🧁</h1>
+
+    <div class="produto">
+      <label for="pao">Pão (R$1):</label>
+      <input type="number" id="pao" value="0" min="0">
+    </div>
+
+    <div class="produto">
+      <label for="bolo">Bolo (R$5):</label>
+      <input type="number" id="bolo" value="0" min="0">
+    </div>
+
+    <div class="produto">
+      <label for="doce">Doce (R$3):</label>
+      <input type="number" id="doce" value="0" min="0">
+    </div>
+
+    <div class="produto">
+      <label for="pago">Valor pago (R$):</label>
+      <input type="number" id="pago" value="0" min="0">
+    </div>
+
+    <button onclick="calcular()">Calcular Pedido</button>
+
+    <div class="resumo">
+      <p id="total"></p>
+      <p id="desconto"></p>
+      <p id="troco"></p>
+      <p id="pontos"></p>
+      <div class="convertido" id="moeda"></div>
+    </div>
+
+    <hr>
+
+    <div class="painel-admin">
+      <h2>Painel</h2>
+      <p>Produto mais vendido no pedido: <strong id="maisVendido">-</strong></p>
+      <p>Vendas totais: <strong id="vendasTotais">0</strong></p>
+    </div>
+  </div>
+  <script defer src="script.js"></script>
+</body>
+</html>
